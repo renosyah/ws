@@ -12,8 +12,8 @@ import "github.com/renosyah/ws"
 
 ```
 
-    ws := &ws.WebsocketServer{}
-    ws.Init()
+	ws := &ws.WebsocketServer{}
+	ws.Init()
 
 	http.Handle("/ws", ws)
 	http.ListenAndServe(":8000", nil)
