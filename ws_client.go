@@ -8,6 +8,10 @@ import (
 	"github.com/gorilla/websocket"
 )
 
+const (
+	MessageTypeText = websocket.TextMessage
+)
+
 type WebsocketClient struct {
 	Url         string
 	MessageType int

@@ -26,6 +26,13 @@ import "github.com/renosyah/ws"
 ```
     ctx := context.Background()
 
+
+	wsc := &ws.WebsocketClient{
+		Url : "ws://localhost:8000/ws",
+		MessageType : ws.MessageTypeText,
+	}
+
+
     err := wsc.NewClient()
 	if err != nil {
 		fmt.Println(err.Error())
