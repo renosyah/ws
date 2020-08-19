@@ -24,7 +24,8 @@ import "github.com/renosyah/ws"
 - Websocket Client
 
 ```
-    ctx := context.Background()
+
+	ctx := context.Background()
 
 
 	wsc := &ws.WebsocketClient{
@@ -33,7 +34,7 @@ import "github.com/renosyah/ws"
 	}
 
 
-    err := wsc.NewClient()
+	err := wsc.NewClient()
 	if err != nil {
 		fmt.Println(err.Error())
 		return
